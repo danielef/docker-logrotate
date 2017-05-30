@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ -z "$CRON_EXPR" ]; then
-  CRON_EXPR="0 6	* * *"
+  CRON_EXPR="* * * * *"
   echo "CRON_EXPR environment variable is not set. Set to default: $CRON_EXPR"
 else
   echo "CRON_EXPR environment variable set to $CRON_EXPR"
